@@ -1,4 +1,4 @@
-# Paddleのもと
+# Paddleコントローラー
 
 - https://github.com/masuilab/paddle-linda
 
