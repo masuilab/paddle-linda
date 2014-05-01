@@ -2,6 +2,7 @@
 
 - https://github.com/masuilab/paddle-linda
 
+![Paddleコントローラー](http://gyazo.com/b3e829f6b0c0543c29ab90d5470d14e5.png)
 
 ## nodeインストール
 
