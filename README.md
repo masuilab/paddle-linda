@@ -1,5 +1,8 @@
 # Paddleのもと
 
+- https://github.com/masuilab/paddle-linda
+
+
 ## nodeインストール
 
     % brew install node
