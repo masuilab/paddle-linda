@@ -18,13 +18,10 @@ app_handler = (req, res) ->
 
 app = http.createServer(app_handler)
 io = require('socket.io').listen(app)
-io.configure 'development', ->
-  io.set 'log level', 2
-
 
 ## Linda Server ##
 
-linda = require('linda-socket.io').Linda.listen(io: io, server: app)
+linda = require('linda').Server.listen(io: io, server: app)
 ts = linda.tuplespace('paddle')
 
 process.env.PORT ||= 3000
