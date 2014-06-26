@@ -1,7 +1,7 @@
 http = require 'http'
 fs   = require 'fs'
 url  = require 'url'
-ArduinoFirmata = require 'arduino-firmata'
+BLEFirmata = require 'ble-firmata'
 
 ## HTTP Server ##
 
@@ -31,8 +31,8 @@ console.log "server start - port:#{process.env.PORT}"
 
 ## Arduino ##
 
-arduino = new ArduinoFirmata()
-arduino.on 'connect', ->
+arduino = new BLEFirmata()
+arduino.once 'connect', ->
   arduino.on 'analogChange', (e) ->
     return if e.pin > 1
     data =

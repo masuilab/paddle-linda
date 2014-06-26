@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "arduino-firmata": "^0.3.0",
+    "ble-firmata": "^0.1.2",
     "coffee-script": "^1.7.1",
     "linda": "~>1.0",
     "socket.io": "~>1.0",
